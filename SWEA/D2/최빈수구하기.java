@@ -23,3 +23,6 @@ class Solution {
 		}
 	}
 }
+/*
+arr[sc.nextInt()] - index에 바로 받을 생각
+*/
