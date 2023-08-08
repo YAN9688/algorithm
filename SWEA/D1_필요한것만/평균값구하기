@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class Solution {
+	public static void main(String args[]) throws Exception {
+		Scanner sc = new Scanner(System.in);
+		int T;
+		T = sc.nextInt();
+		for (int test_case = 1; test_case <= T; test_case++) {
+			int avg = 0;
+			int sum = 0;
+			int arr[] = new int[10];
+			for (int i = 0; i < 10; i++) {
+				arr[i] = sc.nextInt();
+			}
+			for (int i = 0; i < 10; i++) {
+				sum += arr[i];
+			}
+			avg = (int) Math.round(sum / 10.0);
+			System.out.println("#" + test_case + " " + avg);
+		}
+	}
+}
+
+/*
+나눌 때 조심하자!!! int를 int로 나누면 자동으로 정수화 시킨다.
+sum을 float(or double)로 할당하든,
+나눌때 10.0을 나누든 해야한다.
+
+근데 이렇게 잘 해도 에러가 뜨는데
+avg를 int로 할당했기 때문이었다.
+avg = (int) Math.round(sum / 10.0); int 캐스팅을 해줘야 에러가 해결됐다
+변수 할당 없이 그냥  Math.round(sum / 10.0)를 바로 뽑아도 될 것 같다.
+
+누군가의 TIP !
+int( x + 0.5)를 하면 이런 거 고민할 거 없이 반올림 쉽게 된다!
+*/
