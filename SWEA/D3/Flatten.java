@@ -25,3 +25,7 @@ class Solution {
 		}
 	}
 }
+/*
+loop의 매 시행마다
+Array를 sort하는 것과, MAX-MIN을 구하고 각각의 INDEX 탐색하는 것 중 어느 것이 더 효율적일지 고민해보았다.
+*/
