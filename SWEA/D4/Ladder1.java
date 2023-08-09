@@ -50,6 +50,7 @@ class Solution {
     }
 }
 /*
+https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14ABYKADACFAYh
 디버그에 시간이 걸렸던 과정: 사다리 옆으로 이동하는 과정이 한번에 이루어지는 것이 아니라는 것을 간과했다. 사다리의 가로 길이도 천차만별인것을!
 input데이터가 적혀있는 칸을 유심히 보면서 알고리즘대로 움직여보다가 깨달았다.
 막히는 일이 있으면 꼭 이런식으로 문제를 다시 바라볼 것.
