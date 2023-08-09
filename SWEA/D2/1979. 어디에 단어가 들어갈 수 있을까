@@ -1,5 +1,3 @@
-//https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PuPq6AaQDFAUq//
-
 import java.util.Scanner;
 
 class Solution {
@@ -45,6 +43,8 @@ class Solution {
 	}
 }
 /*
+https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PuPq6AaQDFAUq
+
 python에서는 sum(map[r][c:c+k]) 처럼 간단하게 구할 수 있는 슬라이스의 합이, 자바에서는 꽤나 복잡했다.
 loop를 이용할 수 있다면 그다지 복잡한 과정이 아니겠지만, if의 조건문 안에서 이것을 구현하려고 하니, loop사용이 어려웠다.
 그렇기에 1. 메서드를 따로 만드는 방법과 2. 누적합의 배열을 만드는 방법 두가지를 떠올려봤는데
