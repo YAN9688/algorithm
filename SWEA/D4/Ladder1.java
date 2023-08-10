@@ -55,3 +55,26 @@ https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV1
 input데이터가 적혀있는 칸을 유심히 보면서 알고리즘대로 움직여보다가 깨달았다.
 막히는 일이 있으면 꼭 이런식으로 문제를 다시 바라볼 것.
 */
+
+/*
+훨씬 깔끔한 코드 만들어보기!!
+			int r = 99;
+			int c;
+			for (c = 1; c <= 100; c++) {
+				if (map[99][c] == 2)
+					break;
+			}
+			while (r > 0) {
+				if (map[r][c - 1] == 1) {
+					while (map[r][c - 1] == 1)
+						c--;
+				} else if (map[r][c + 1] == 1) {
+					while (map[r][c + 1] == 1) {
+						c++;
+					}
+				}
+				r--;
+			}
+			System.out.println("#" + tc + " " + (c - 1));
+		}
+*/
