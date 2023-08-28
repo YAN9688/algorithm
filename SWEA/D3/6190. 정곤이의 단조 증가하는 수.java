@@ -36,3 +36,14 @@ class Solution {
         }
     }
 }
+
+/*
+                    // Ai*Aj 값을 문자 배열로 바꾸기
+                    char[] c = String.valueOf(arr[i] * arr[j]).toCharArray(); 
+                     
+                    // 단조증가하는 수인지 확인
+                    for (int k = 0; k < c.length-1; k++)
+                        if (c[k] > c[k+1]) continue j; 
+                    이런방식도 생각해볼수있다.
+                    Integer, String의 메소드에 대해서 공부를 좀 더 해봐야겠다.
+*/
