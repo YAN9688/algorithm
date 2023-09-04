@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-public class swea2105디저트카페2 {
+public class Solution {
 	static int N, R, L, ans;
 	static Set<Integer> set;
 	static int[][] map;
