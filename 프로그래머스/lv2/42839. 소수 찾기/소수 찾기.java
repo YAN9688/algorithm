@@ -10,24 +10,25 @@ class Solution {
         }
 		return true;
 	} 
-	public static void per(String nu, String numbers) {
-		for (int i = 0; i < numbers.length(); i++) {
-			if (!visited[i]) {
-				visited[i] = true;
-				per(nu + numbers.charAt(i), numbers);
-				visited[i]= false;
-			}			
-		}
-        if(nu.length()!=0){
-            int num = Integer.parseInt(nu);
-			if (num>=2 && check(num))
-				set.add(num);
+    public static void per(StringBuilder sb, String numbers) {
+        for (int i = 0; i < numbers.length(); i++) {
+            if (!visited[i]) {
+                visited[i] = true;
+                sb.append(numbers.charAt(i));
+                int num = Integer.parseInt(sb.toString());
+                if (num >= 2 && check(num))
+                    set.add(num);
+                per(sb, numbers);
+                sb.deleteCharAt(sb.length() - 1);
+                visited[i] = false;
+            }
         }
-	}
+    }
 	public int solution(String numbers) {
 		set=new HashSet<>();
         visited = new boolean[numbers.length()];
-		per("", numbers);
+        StringBuilder sb=new StringBuilder();
+		per(sb, numbers);
 		return set.size();
     }
 }
