@@ -1,8 +1,8 @@
 import java.util.*;
 class Solution {
-    StringBuilder sb = new StringBuilder();
-    boolean[] used;
-    String ans = "Z";
+    static StringBuilder sb = new StringBuilder();
+    static boolean[] used;
+    static String ans = "Z";
     public String[] solution(String[][] tickets) {
         used = new boolean[tickets.length];
         sb.append("ICN ");
