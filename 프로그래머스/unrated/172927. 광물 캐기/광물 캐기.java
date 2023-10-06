@@ -2,7 +2,9 @@ import java.util.*;
 
 class Solution {
 	static int tired;
-	static int[][] board = { { 1, 1, 1 }, { 5, 1, 1 }, { 25, 5, 1 } };
+	static int[][] board = { { 1, 1, 1 }
+                            ,{ 5, 1, 1 }
+                            ,{ 25, 5, 1 } };
 	static Map<String, Integer> map = new HashMap<>();
 	static int[] order;
 
