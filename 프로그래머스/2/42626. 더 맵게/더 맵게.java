@@ -8,23 +8,23 @@ class Solution {
 		for (int i = 0; i < n; i++) {
 			pq.add(scoville[i]);
 		}
+		if (pq.peek() == 0) {
+
+			return -1;
+		}
 		while (true) {
 			int a = pq.poll();
-            if(a>=K) {
+			if (a >= K) {
 				break;
 			}
-            if(pq.isEmpty()){
-                answer = -1;
-                break;
-            }
-			int b = pq.poll();
-			if (a == 0) {
+			if (pq.isEmpty()) {
 				answer = -1;
 				break;
 			}
+			int b = pq.poll();
 			pq.add(a + 2 * b);
 			answer++;
 		}
-        return answer;
+		return answer;
 	}
 }
